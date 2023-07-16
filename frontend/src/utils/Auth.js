@@ -13,7 +13,7 @@ class Auth {
     }
 
     register(email, password) {
-        return fetch(`${this._baseUrl}/signup`, {
+        return fetch(`${baseUrl}/signup`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -24,7 +24,7 @@ class Auth {
     }
 
     authorize(email, password) {
-        return fetch(`${this._baseUrl}/signin`, {
+        return fetch(`${baseUrl}/signin`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

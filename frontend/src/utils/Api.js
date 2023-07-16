@@ -7,6 +7,7 @@ class Api {
     }
 
     setToken(token) { this._headers.Authorization = `Bearer ${token}`; }
+    
     _getJson(res) {
         if (res.ok) {
             return res.json();
