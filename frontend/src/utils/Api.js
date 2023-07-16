@@ -1,4 +1,4 @@
-//import baseUrl from "./consts";
+import baseUrl from "./consts";
 
 class Api {
     constructor({ baseUrl, headers }) {
