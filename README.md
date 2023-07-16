@@ -10,8 +10,8 @@
 
 ## Ссылки на проект
 
-IP 
+IP 158.160.20.15
 
-Frontend 
+Frontend https://frankywoo.nomoredomains.xyz/
 
-Backend 
+Backend https://api.frankywoo.nomoredomains.xyz/
