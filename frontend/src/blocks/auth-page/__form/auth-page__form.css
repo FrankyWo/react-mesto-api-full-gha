@@ -1,0 +1,14 @@
+.auth-page__form {
+    min-width: 430px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 36px 0;
+}
+
+@media screen and (max-width: 600px) {
+    .auth-page__form {
+        min-width: 282px;
+        padding: 25px;
+    }
+}

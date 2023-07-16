@@ -1,0 +1,9 @@
+.pop-up__container_type_info {
+    box-sizing: border-box;
+    max-width: 430px;
+    padding: 0 36px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
