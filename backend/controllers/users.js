@@ -73,6 +73,7 @@ const createUser = (req, res, next) => {
       });
     })
     .catch((err) => {
+      console.log(err);
       if (err.code === 11000) {
         next(new ConflictError('Пользователь с указанным email уже существует'));
       } else if (err instanceof mongoose.Error.ValidationError) {
