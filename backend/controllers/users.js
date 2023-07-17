@@ -16,7 +16,7 @@ const login = (req, res, next) => {
       const token = jwt.sign({ _id: user._id }, NODE_ENV === 'production' ? JWT_SECRET : 'some-secret-key', { expiresIn: '7d' });
       res.send({ token }).select('-password');
     })
-    .catch((err) => next(err));
+    .catch(next);
 };
 
 const getUserInfo = (req, res, next) => {
@@ -53,6 +53,7 @@ const getUserById = (req, res, next) => {
       }
     });
 };
+
 const createUser = (req, res, next) => {
   bcrypt.hash(req.body.password, 10)
     .then((hash) => userModel.create({
