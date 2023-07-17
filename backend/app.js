@@ -28,7 +28,7 @@ app.use(limiter);
 
 app.use(helmet());
 
-mongoose.connect('mongodb://localhost:27017/mestodb', { useNewUrlParser: true })
+mongoose.connect('mongodb://127. 0.0.1:27017/mestodb', { useNewUrlParser: true })
   .then(() => console.log('Подключение к базе данных успешно'))
   .catch((err) => {
     console.log('Ошибка подключения к базе данных', err);
