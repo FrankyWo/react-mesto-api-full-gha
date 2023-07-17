@@ -5,8 +5,8 @@ const allowedCors = [
   'https://localhost:3001',
   'https://frankywoo.nomoredomains.xyz',
   'http://frankywoo.nomoredomains.xyz',
-  'https://api.frankywoo.nomoredomains.xyz',
-  'http://api.frankywoo.nomoredomains.xyz',
+  'https://frankywoo.nomoredomains.xyz/api',
+  'http://frankywoo.nomoredomains.xyz/api',
 ];
 
 const cors = (req, res, next) => {
