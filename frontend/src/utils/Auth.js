@@ -18,8 +18,9 @@ class Auth {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
                 password: password,
-                email: email,
-            }),
+                email: email
+              }),
+              mode: 'no-cors'
         }).then(this._getJson);
     }
 
@@ -29,15 +30,20 @@ class Auth {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
                 password: password,
-                email: email,
-            }),
+                email: email
+              }),
+              mode: 'no-cors'
         }).then(this._getJson);
     }
 
     getUserData(token) {
         return fetch(`${this._baseUrl}/users/me`, {
             method: "GET",
-            headers: { Accept: "application/json", "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+            headers: { Accept: "application/json",
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`
+          },
+          mode: 'no-cors'
         }).then(this._getJson);
     }
 }
