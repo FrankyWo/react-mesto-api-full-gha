@@ -42,6 +42,8 @@ class Auth {
     }
 }
 
+// const auth = new Auth({ baseUrl: "http://api.frankywoo.nomoredomains.xyz" });
+// const auth = new Auth({ baseUrl: "http://localhost:3000" });
 const auth = new Auth({ baseUrl: baseUrl });
 
 export default auth;

@@ -47,7 +47,6 @@ function App() {
         if (!token) {
             return;
         }
-
         auth
             .getUserData(token)
             .then((userData) => {
@@ -104,6 +103,8 @@ function App() {
     };
 
     useEffect(() => {
+        // api.setToken(token);
+        // debugger;
         if (!token) {
             return;
         }
@@ -123,6 +124,7 @@ function App() {
             return;
         }
         api.setToken(token);
+        // debugger;
         api
             .getInitialCards()
             .then((cards) => {

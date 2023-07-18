@@ -82,6 +82,8 @@ class Api {
 }
 
 const api = new Api({
+    // baseUrl: "http://api.frankywoo.nomoredomains.xyz",
+    // baseUrl: "http://localhost:3000",
     baseUrl: baseUrl,
     headers: {
         "Content-Type": "application/json",
