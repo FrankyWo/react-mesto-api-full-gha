@@ -80,6 +80,7 @@ function App() {
         auth
             .authorize(email, password)
             .then((res) => {
+                
                 localStorage.setItem('token', res.token);
                 setToken(res.token);
                 setUserData(userData);
